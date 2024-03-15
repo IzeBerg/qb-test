@@ -1,0 +1,25 @@
+[tool.poetry]
+name = "qb-test"
+version = "0.1.0"
+description = ""
+authors = ["Renat Iliev <me@izeberg.me>"]
+readme = "README.md"
+packages = [{include = "qb_test"}]
+
+[tool.poetry.dependencies]
+python = "^3.12"
+fastapi = {extras = ["all"], version = "^0.110.0"}
+uvicorn = {extras = ["standard"], version = "^0.28.0"}
+
+
+[tool.poetry.group.dev.dependencies]
+pytest = "^8.1.1"
+black = "^24.3.0"
+isort = "^5.13.2"
+ruff = "^0.3.3"
+mypy = "^1.9.0"
+pytest-asyncio = "^0.23.5.post1"
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"

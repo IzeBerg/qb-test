@@ -1,0 +1,4 @@
+data/
+generate_data/
+__pycache__/
+.idea/
